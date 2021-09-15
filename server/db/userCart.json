@@ -1,0 +1,20 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "id_product": 123,
+            "product_name": "Кровать",
+            "price": 55600,
+            "quantity": 1,
+            "img": "../img/bed.jpg"
+        },
+        {
+            "id_product": 124,
+            "product_name": "Кресло",
+            "price": 30000,
+            "quantity": 1,
+            "img": "../img/armchair.jpg"
+        }
+    ]
+}

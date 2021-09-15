@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bigContainer">
+        <div class="container">
+            <div id="app">
+                <header>
+                    <div class="screensaver">
+                        <img src="img/2.png">
+                    </div>
+                    <div>
+                        <div class="headerMenuH1">
+                            <nav class="menu">
+                                <a href="#">Главная</a>
+                                <a href="#">Продукт</a>
+                                <a href="#">Контакты</a>
+                            </nav>
+                            <filter_el :model="userSearch"></filter_el>
+                            <button class="btn-cart" type="button" @click="showCart=!showCart">Корзина</button>
+
+                            <cart :cart-items="cartItems" :img="imgCart" :visibility="showCart" @remove="remove"></cart>
+                            <filter-el></filter-el>
+                            <div class="cart">
+                                <cart ref="cart"></cart>
+                            </div>
+                        </div>
+                        <h1>УЮТНЫЙ УГОЛОК</h1>
+                        <div>
+                            <p class="textDecor">Cамый интересный текст
+                                <br>для приветствия на сайте домашнего
+                                <br>декора</p>
+                        </div>
+                    </div>
+                </header>
+                <main id="Section_2">
+                    <h2>НАША ПРОДУКЦИЯ</h2>
+
+                    <div class="backgroundFon">
+                        <error ref="error"></error>
+                        <products ref="products"></products>
+                        <products :products="filtered" :img="imgCatalog" @add-product="addProduct"></products>
+                    </div>
+                </main>
+                <footer>
+                    <h2>контакты</h2>
+                    <p>г.Краснодар, ул. Герцена</p>
+                    <p>Те.: +7-953-105-22-45</p>
+
+                </footer>
+            </div>
+            <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+                integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+            <script src="js/filterComponent.js"></script>
+            <script src="js/cartComponent.js"></script>
+            <script src="js/productComponent.js"></script>
+            <script src="js/main.js"></script>
+
+</body>
+
+</html>

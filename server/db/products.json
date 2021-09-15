@@ -1,0 +1,34 @@
+[
+  {
+    "id_product": 123,
+    "product_name": "Кровать",
+    "price": 55600,
+    "quantity": 1,
+    "img": "../img/bed.jpg"
+  },
+  {
+    "id_product": 124,
+    "product_name": "Кресло",
+    "price": 30700,
+    "quantity": 1,
+    "img": "../img/armchair.jpg"
+  },
+  {
+    "id_product": 125,
+    "product_name": "Столик",
+    "price": 15600,
+    "img": "../img/table.jpg"
+  },
+  {
+    "id_product": 126,
+    "product_name": "Стул",
+    "price": 5400,
+    "img": "../img/chair.jpg"
+  },
+  {
+    "id_product": 127,
+    "product_name": "Подушка",
+    "price": 1800,
+    "img": "../img/pillow.jpg"
+  }
+]
